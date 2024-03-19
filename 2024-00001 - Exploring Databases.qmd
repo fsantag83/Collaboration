@@ -1,5 +1,5 @@
 ---
-title: "Startin Collaboration"
+title: "Starting Collaboration"
 author: "Diana Galindo and Fernando Santa"
 format: html
 editor: visual
@@ -15,6 +15,13 @@ When you click the **Render** button a document will be generated that includes 
 
 ```{r}
 1 + 1
+
+x <- rchisq(100,2)
+
+op <- par(mfrow = c(1,2))
+hist(rchisq(100,2))
+boxplot(x)
+par(op)
 ```
 
 You can add options to executable code like this
